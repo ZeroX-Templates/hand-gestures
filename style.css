@@ -1,0 +1,108 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0ead6;
+  /* Light pastel yellow */
+  color: #333;
+  /* Dark gray text */
+  font-family: 'Montserrat', sans-serif;
+  /* Montserrat font */
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to right, #ff7846, #e6b980);
+  /* Gradient summer vibe colors */
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #fff;
+  /* White text */
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0 2rem;
+}
+
+.camera-container,
+.canvas-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ff7846;
+  /* Orange border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.camera-container {
+  order: 1;
+  /* Ensure camera is on the left */
+  width: 70%;
+  /* Adjust camera width */
+}
+
+canvas {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+nav {
+  width: 100%;
+  background: linear-gradient(to right, #ff7846, #e6b980);
+  /* Gradient summer vibe colors */
+  padding: 0.5rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button,
+select {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #fff;
+  /* White background */
+  color: #ff7846;
+  /* Orange text */
+  border: 2px solid #ff7846;
+  /* Orange border */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover,
+select:hover {
+  background-color: #ff7846;
+  /* Orange background on hover */
+  color: #fff;
+  /* White text on hover */
+}
+
+select {
+  background-color: transparent;
+}

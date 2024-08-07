@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hand Model Simulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Hand Model Simulation</h1>
+    <div class="controls">
+      <button id="startButton" aria-label="Start Hand Tracking">Start</button>
+      <button id="stopButton" aria-label="Stop Hand Tracking">Stop</button>
+      <label for="modeSelect">Mode:</label>
+      <select id="modeSelect">
+        <option value="single">Single Hand</option>
+        <option value="dual">Dual Hands</option>
+      </select>
+    </div>
+  </header>
+  <main>
+    <video id="video" autoplay></video>
+    <canvas id="canvas"></canvas>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
